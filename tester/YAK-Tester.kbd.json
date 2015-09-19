@@ -1,0 +1,79 @@
+[
+  {
+    "name": "YAK Tester",
+    "switchMount": "cherry",
+    "switchBrand": "cherry",
+    "plate": true
+  },
+  [
+    {
+      "st": "MX1A-E1xx",
+      "a": 6
+    },
+    "Blue",
+    {
+      "st": "MX1A-C1xx"
+    },
+    "Clear",
+    {
+      "st": "MX1A-11xx"
+    },
+    "Black",
+    {
+      "st": "MX1A-F1xx"
+    },
+    "Green",
+    {
+      "st": "MX1A-G1xx"
+    },
+    "Brown",
+    {
+      "st": "MX1A-L1xx"
+    },
+    "Red",
+    {
+      "st": "MX1A-21xx"
+    },
+    "GreyL",
+    {
+      "st": "MX1A-E1xx"
+    },
+    "65 cN Blue",
+    {
+      "st": "MX1A-C1xx"
+    },
+    "50 cN Clear",
+    {
+      "st": "MX1A-E1xx"
+    },
+    "60 cN Blue",
+    {
+      "st": "MX1A-11xx"
+    },
+    "50 cN Black",
+    {
+      "st": "MX1A-E1xx"
+    },
+    "80 cN Blue",
+    {
+      "st": "MX1A-21xx"
+    },
+    "50 cN GreyL",
+    {
+      "st": "MX1A-C1xx"
+    },
+    "60 cN Clear",
+    {
+      "st": "MX1A-11xx"
+    },
+    "65 cN Black",
+    {
+      "st": "MX1A-C1xx"
+    },
+    "80 cN Clear",
+    {
+      "st": "MX1A-21xx"
+    },
+    "65 cN GreyL"
+  ]
+]
