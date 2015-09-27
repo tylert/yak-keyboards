@@ -2,9 +2,9 @@ plus-shaped hole cutouts
 cherry + costar stabilizers
 
 sandwich style case
-8 holes, 4 mm each
-7 mm width padding
-7 mm height padding
+10 holes, 3 mm each
+6 mm width padding
+6 mm height padding
 2 mm radius corners
 
 kerf off
