@@ -3,8 +3,8 @@ cherry + costar stabilizers
 
 sandwich style case
 8 holes, 3 mm each
-6 mm width padding
-6 mm height padding
+10 mm width padding
+10 mm height padding
 2 mm radius corners
 
 kerf off
