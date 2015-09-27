@@ -1,12 +1,13 @@
 [
   {
-    "name": "YAK Tester",
+    "name": "YAK Tester 17 Strip",
     "switchMount": "cherry",
     "switchBrand": "cherry",
     "plate": true
   },
   [
     {
+      "p": "DCS",
       "st": "MX1A-E1xx",
       "a": 6
     },
