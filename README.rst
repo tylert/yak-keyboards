@@ -11,26 +11,6 @@
 
 * https://github.com/tmk/tmk_keyboard
 
----
-
-YAK Tester 17 Strip
-
-.. image:: yak-tester/yak-tester.png
-
-* http://www.keyboard-layout-editor.com/#/gists/df36e056d5bb9e1c0cb5
-
-YAK TKO 21 Pad
-
-.. image:: yak-pad/yak-pad.png
-
-* http://www.keyboard-layout-editor.com/#/gists/7d16c1ee060f6c2fa83f
-
-YAK TKL 87 ANSI
-
-.. image:: yak-tkl/yak-tkl.png
-
-* http://www.keyboard-layout-editor.com/#/gists/0dfd8600fe1a570e260f
-
 
 Parts
 =====
