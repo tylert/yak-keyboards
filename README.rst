@@ -1,5 +1,11 @@
 .. image:: yak.png
 
+YAK = "Yet Another Keyboard"
+
+
+Resources
+=========
+
 * http://www.keyboard-layout-editor.com/
 * https://github.com/ijprest/keyboard-layout-editor
 
@@ -20,6 +26,8 @@ Plates
 .. image:: plate_stabilizer_holes.png
 
 .. image:: plate_spacebar_holes.png
+
+From http://cherrycorp.com/product/mx-series/
 
 
 Parts
