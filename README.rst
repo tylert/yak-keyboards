@@ -12,6 +12,16 @@
 * https://github.com/tmk/tmk_keyboard
 
 
+Plates
+======
+
+.. image:: plate_switch_holes.png
+
+.. image:: plate_stabilizer_holes.png
+
+.. image:: plate_spacebar_holes.png
+
+
 Parts
 =====
 
