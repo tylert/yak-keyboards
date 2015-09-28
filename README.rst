@@ -34,6 +34,15 @@ Parts
 =====
 
 
+Switches
+--------
+
+Blue, Clear, Black and Grey linear switches:
+
+* http://www.digikey.ca/product-search/en/switches/pushbutton-switches/1114209?k=cherry%20mx
+* http://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+mx
+
+
 Stabilizers
 -----------
 
@@ -44,8 +53,6 @@ PCB mount Cherry (Part number G99-0742):
 * http://winkeyless.kr/product/cherry-pcb-mount-stabilizers/
 * http://www.digikey.ca/product-search/en?keywords=cherry%20g99
 
-* http://www.gonskeyboardworks.com/stabilizers/90-wire-for-spacebar-stabilizers.html
-
 Plate mount Cherry (Part number G99-0224):
 
 * http://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+g99
@@ -55,12 +62,17 @@ Plate mount Costar:
 
 * http://www.wasdkeyboards.com/index.php/products/keyboard-parts.html
 
+Ready-made (6.25u for Cherry stabilizers; PCB-only?):
 
-Switches
---------
+* http://www.gonskeyboardworks.com/stabilizers/90-wire-for-spacebar-stabilizers.html
 
-* http://www.digikey.ca/product-search/en/switches/pushbutton-switches/1114209?k=cherry%20mx
-* http://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+mx
+DIY (Costar and Cherry):
+
+* https://youtu.be/zry3CHNKgT8
+* http://shop.dubro.com/p/e-z-bender-wire-forming-tool
+* http://hobbyhome.ca/product/ez-bender-wire-forming-tool-sm/
+* http://hobbyhome.ca/product/music-wire-36-047-20/
+* http://hobbyhome.ca/product/music-wire-36-062116-15/
 
 
 Keycaps
@@ -69,4 +81,7 @@ Keycaps
 DCS PBT:
 
 * http://www.wasdkeyboards.com/index.php/products/keycap-set/doubleshot-pbt-104-key-cherry-mx-keycap-set-black-slate.html
+
+Extra keys (ABS and PBT depending on stock/colours):
+
 * http://keyshop.pimpmykeyboard.com/products/blank-key-packs/dcs-relegendables
