@@ -107,10 +107,15 @@ DIY (Costar and Cherry):
 * http://hobbyhome.ca/product/music-wire-36-047-20/
 * http://hobbyhome.ca/product/music-wire-36-062116-15/
 
-"Du-Bro E/Z Bender" (DUB480?)
-1/16" = 0.0625" = 1.5875mm; #502/#504? Piano Wire (Cherry stabilizer bars)
-  26 ga?
-3/64" = 0.046875" = 1.190625mm; #5xx? Piano Wire (Costar stabilizer bars)
-  21 ga?
+::
+    "Du-Bro E/Z Bender" (DUB480?)
 
-"Piano Wire" = "Music Wire"
+    K+S 504 Steel Music Wire (Cherry stabilizer bars)
+    1/16 inch = 0.0625 inch = 1.5875 mm
+    26 ga?
+
+    K+S 502 Steel Music Wire (Costar stabilizer bars)
+    3/64 inch = 0.046875 inch = 1.190625 mm
+    21 ga?
+
+    "Music Wire" a.k.a. "Piano Wire"
