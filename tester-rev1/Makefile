@@ -50,8 +50,7 @@ TARGET_DIR = .
 # List C source files here. (C dependencies are automatically generated.)
 SRC =	keymap.c \
 	matrix.c \
-	led.c \
-	backlight.c
+	led.c
 
 CONFIG_H = config.h
 
@@ -101,7 +100,7 @@ EXTRAKEY_ENABLE = yes	# Audio control and System control(+450)
 #COMMAND_ENABLE = yes    # Commands for debug and configuration
 #SLEEP_LED_ENABLE = yes  # Breathing sleep LED during USB suspend
 #NKRO_ENABLE = yes	# USB Nkey Rollover - not yet supported in LUFA
-BACKLIGHT_ENABLE = yes  # Enable keyboard backlight functionality
+#BACKLIGHT_ENABLE = yes  # Enable keyboard backlight functionality
 
 # Boot Section Size in bytes
 #   Teensy halfKay   512
