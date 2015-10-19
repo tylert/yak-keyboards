@@ -19,6 +19,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "stdint.h"
 #include "led.h"
 
+/* LED pin configuration
+ *
+ * NumLock PB4 (low)
+ *
+ */
 void led_set(uint8_t usb_led)
 {
+    // Set as output
+    DDRB |= (1<<4);
+
+    if (usb_led & (1<<USB_LED_NUM_LOCK))
+    {
+        // Output low
+        PORTB &= ~(1<<4);
+    }
+    else
+    {
+        // Output high
+        PORTB |= (1<<4);
+    }
 }
