@@ -27,7 +27,7 @@
 # make flip-ee = Download the eeprom file to the device, using Atmel FLIP
 #                (must have Atmel FLIP installed).
 #
-# make debug = Start either simulavr or avarice as specified for debugging, 
+# make debug = Start either simulavr or avarice as specified for debugging,
 #              with avr-gdb or avr-insight as the front end for debugging.
 #
 # make filename.s = Just compile filename.c into the assembler code only.
@@ -56,7 +56,7 @@ CONFIG_H = config.h
 
 # MCU name
 #MCU = atmega32u4       # Teensy 2.0
-MCU = at90usb1286      # Teensy++ 2.0
+MCU = at90usb1287      # Teensy++ 2.0
 
 # Processor frequency.
 #     This will define a symbol, F_CPU, in all source code files equal to the
