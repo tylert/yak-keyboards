@@ -69,7 +69,7 @@ MCU = at90usb1287      # Teensy++ 2.0
 #     does not *change* the processor frequency - it should merely be updated to
 #     reflect the processor speed set externally so that the code can use accurate
 #     software delays.
-F_CPU = 8000000
+F_CPU = 16000000
 
 #
 # LUFA specific
@@ -103,9 +103,11 @@ EXTRAKEY_ENABLE = yes	# Audio control and System control(+450)
 #BACKLIGHT_ENABLE = yes  # Enable keyboard backlight functionality
 
 # Boot Section Size in bytes
-#   Teensy halfKay   512
 #   Atmel DFU loader 4096
 #   LUFA bootloader  4096
+#   Teensy++ halfKay 1024
+#   Teensy halfKay   512
+#   USBaspLoader     2048
 OPT_DEFS += -DBOOTLOADER_SIZE=4096
 
 # Search Path
