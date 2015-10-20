@@ -73,14 +73,14 @@ DCS Extra keys (ABS and PBT depending on stock/colours):
 Stabilizers
 -----------
 
-PCB mount Cherry (Part number G99-0742):
+PCB mount Cherry (Part number G99-0742 with 2.0 unit bars):
 
 * http://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+g99
 * http://www.gonskeyboardworks.com/10-stabilizers
 * http://winkeyless.kr/product/cherry-pcb-mount-stabilizers/
 * http://www.digikey.ca/product-search/en?keywords=cherry%20g99
 
-Plate mount Cherry (Part number G99-0224):
+Plate mount Cherry (Part number G99-0224 with 2.0 unit bars):
 
 * http://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+g99
 * http://www.digikey.ca/product-search/en?keywords=cherry%20g99
@@ -93,29 +93,52 @@ Plate mount Costar:
 Stabilizer Bars
 ---------------
 
-2.0u bars are included with the G99-0742 and G99-0224 parts above.
+2.0 unit bars are included with the G99-0742 and G99-0224 parts above.
 
-Ready-made (for 6.25u spacebars and Cherry stabilizers; PCB-only?):
+Ready-made (for 6.25 unit spacebars and Cherry stabilizers; PCB-only?):
 
 * http://www.gonskeyboardworks.com/stabilizers/90-wire-for-spacebar-stabilizers.html
 
-DIY (Costar and Cherry):
+DIY Costar
+^^^^^^^^^^
 
-* https://youtu.be/zry3CHNKgT8
-* http://shop.dubro.com/p/e-z-bender-wire-forming-tool
-* http://hobbyhome.ca/product/ez-bender-wire-forming-tool-sm/
-* http://hobbyhome.ca/product/music-wire-36-047-20/
-* http://hobbyhome.ca/product/music-wire-36-062116-15/
+"Music Wire" a.k.a. "Piano Wire"
 
 ::
-    "Du-Bro E/Z Bender" (DUB480?)
-
-    K+S 504 Steel Music Wire (Cherry stabilizer bars)
-    1/16 inch = 0.0625 inch = 1.5875 mm
-    26 ga?
 
     K+S 502 Steel Music Wire (Costar stabilizer bars)
     3/64 inch = 0.046875 inch = 1.190625 mm
-    21 ga?
+    between 16 and 17 gauge (AWG)
 
-    "Music Wire" a.k.a. "Piano Wire"
+* https://youtu.be/zry3CHNKgT8
+* http://hobbyhome.ca/product/music-wire-36-047-20/
+
+"Du-Bro E/Z Bender" (DUB480 or DUB481 kits + DUB484 die)
+
+DUB480  E/Z Bender Tool + DUB483 + DUB484 Kit
+DUB481  E/Z Bender Tool + DUB485 + DUB486 Kit
+DUB482  ?
+DUB483  0.015 to 0.020 inch
+DUB484  0.031 to 0.047 inch
+DUB485  0.062 to 0.072 inch
+DUB486  0.072 to 0.093 inch
+
+* http://shop.dubro.com/p/e-z-bender-wire-forming-tool
+* http://shop.dubro.com/p/e-z-bender-wire-forming-tool-2
+* http://hobbyhome.ca/product/ez-bender-wire-forming-tool-sm/
+
+
+DIY Cherry
+^^^^^^^^^^
+
+* http://hobbyhome.ca/product/music-wire-36-062116-15/
+
+Do not try to bend this wire on the DUB480 or DUB481 kits using the DUB485 die.
+
+::
+
+    "K+S Mighty Wire Bender and Coiler" (K+S326)
+
+    K+S 504 Steel Music Wire (Cherry stabilizer bars)
+    1/16 inch = 0.0625 inch = 1.5875 mm
+    between 14 and 15 gauge (AWG)
