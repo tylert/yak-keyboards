@@ -73,5 +73,9 @@ swaps.remove(('80 cN', 'Black'))  # same as Grey linear
 #swaps.remove(('65 cN', 'Blue'))  # spare 50 cN Clear
 #swaps.remove(('65 cN', 'Grey linear'))  # too close to Black
 
-print(['{spring} {stem}'.format(spring=pair[0], stem=pair[1])
-    for pair in swaps])
+keys = ['{spring} {stem}'.format(spring=pair[0], stem=pair[1])
+    for pair in swaps]
+
+keys.extend(stems)
+
+print(keys)
