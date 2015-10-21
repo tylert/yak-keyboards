@@ -27,8 +27,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     t.m.k. keyboard firmware for YAK Tester
 
 /* matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 5
+#define MATRIX_ROWS 1
+#define MATRIX_COLS 17
 
 /* Set 0 if need no debouncing */
 #define DEBOUNCE    5
