@@ -30,7 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 6
 #define MATRIX_COLS 4
 
-/* Set 0 if need no debouncing */
+/* Set 0 if debouncing isn't needed */
 #define DEBOUNCE    5
 
 /* key combination for command */
