@@ -1,5 +1,20 @@
 static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    /* Layer 0: normal */
+/* Keymap 0: Default
+ * ,---------------.
+ * |   |   |   |   |
+ * `---------------'
+ * ,---------------.
+ * |   |   |   |   |
+ * |---------------|
+ * |  7|  8|  9|   |
+ * |------------   |
+ * |  4|  5|  6|   |
+ * |---------------|
+ * |  1|  2|  3|   |
+ * |------------   |
+ * |       |   |   |
+ * `---------------'
+ */
     KEYMAP(\
         NO,  NO,  NO,  FN0,  \
         NLCK,PSLS,PAST,PMNS, \
@@ -7,7 +22,22 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         P4,  P5,  P6,        \
         P1,  P2,  P3,  PENT, \
         P0,  PDOT),          \
-    /* Layer 1: other */
+/* Overlay 1: Other
+ * ,---------------.
+ * |   |   |   |   |
+ * `---------------'
+ * ,---------------.
+ * |   |   |   |   |
+ * |---------------|
+ * |   |   |   |   |
+ * |------------   |
+ * |   |   |   |   |
+ * |---------------|
+ * |   |   |   |   |
+ * |------------   |
+ * |       |   |   |
+ * `---------------'
+ */
     KEYMAP(\
         TRNS,TRNS,TRNS,TRNS, \
         TRNS,TRNS,TRNS,TRNS, \
