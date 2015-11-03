@@ -1,7 +1,7 @@
 static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Number Pad
  * ,---------------.
- * |   |   |   |   |
+ * |Fn0|   |   |Bks|
  * `---------------'
  * ,---------------.
  * |Num|/  |*  |-  |
@@ -16,7 +16,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `---------------'
  */
     KEYMAP(\
-        NO,  NO,  NO,  FN0,  \
+        FN0, NO,  NO,  BSPC, \
         NLCK,PSLS,PAST,PMNS, \
         P7,  P8,  P9,  PPLS, \
         P4,  P5,  P6,        \

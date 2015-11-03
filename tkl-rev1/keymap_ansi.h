@@ -12,7 +12,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-----------------------------------------------------------|     ,---.
  * |Shft    |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     |     |Up |
  * |-----------------------------------------------------------| ,-----------.
- * |Ctl|Gui|Alt|          Space                |Alt|Gui|Fn |Ctl| |Lef|Dow|Rig|
+ * |Ctl|Gui|Alt|          Space                |Alt|Gui|Fn0|Ctl| |Lef|Dow|Rig|
  * `-----------------------------------------------------------' `-----------'
  */
     KEYMAP(\
@@ -35,7 +35,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-----------------------------------------------------------|     ,---.
  * |Shft    |  ;|  Q|  J|  K|  X|  B|  M|  W|  V|  Z|Shift     |     |Up |
  * |-----------------------------------------------------------| ,-----------.
- * |Ctl|Gui|Alt|          Space                |Alt|Gui|Fn |Ctl| |Lef|Dow|Rig|
+ * |Ctl|Gui|Alt|          Space                |Alt|Gui|Fn0|Ctl| |Lef|Dow|Rig|
  * `-----------------------------------------------------------' `-----------'
  */
     KEYMAP(\
