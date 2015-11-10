@@ -39,7 +39,7 @@
 #----------------------------------------------------------------------------
 
 # Target file name (without extension).
-TARGET = yakpad_lufa
+TARGET = yakstrip_lufa
 
 # Directory common source files exist
 TMK_DIR = ../../tmk_core
