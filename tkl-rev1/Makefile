@@ -39,15 +39,15 @@
 #----------------------------------------------------------------------------
 
 # Target file name (without extension).
-TARGET = yakpad_lufa
+TARGET = yaktkl_lufa
 
-# Directory common source files exist
+# Directory common source filess exist
 TMK_DIR = ../../tmk_core
 
 # Directory keyboard dependent files exist
 TARGET_DIR = .
 
-# List C source files here. (C dependencies are automatically generated.)
+# project specific files
 SRC =	keymap.c \
 	matrix.c \
 	led.c
