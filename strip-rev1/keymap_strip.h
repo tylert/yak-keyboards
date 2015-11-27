@@ -4,14 +4,14 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
  * `-------------------------------------------------------------------'
  */
-    KEYMAP(\
+    KEYMAP( \
         FN0, F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24, P4,  P5,  P6,  P7) \
 /* Overlay 1: Other
  * ,-------------------------------------------------------------------.
  * |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
  * `-------------------------------------------------------------------'
  */
-    KEYMAP(\
+    KEYMAP( \
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS)
 };
 
