@@ -47,12 +47,12 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LCTL,LGUI,LALT,               SPC,                RALT,RGUI,FN0, RCTL,LEFT,DOWN,RGHT), \
 /* Overlay 2: Media
  * ,---.   ,---------------. ,---------------. ,---------------. ,-----------.
- * |   |   |Pwr|Slp|Wak|   | |Prv|Nxt|MSt|Ply| |   |Mut|V- |V+ | |   |   |   |
+ * |   |   |Pow|Pwr|Slp|Wak| |   |   |   |   | |   |Mut|V- |V+ | |   |   |   |
  * `---'   `---------------' `---------------' `---------------' `-----------'
  * ,-----------------------------------------------------------. ,-----------.
- * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |   |   |   |
+ * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |Rwd|Ffd|Stp|
  * |-----------------------------------------------------------| |-----------|
- * |     |   |   |   |   |   |   |   |   |   |   |   |   |     | |   |   |   |
+ * |     |   |   |   |   |   |   |   |   |   |   |   |   |     | |Prv|Nxt|Ply|
  * |-----------------------------------------------------------| `-----------'
  * |      |   |   |   |   |   |   |   |   |   |   |   |        |
  * |-----------------------------------------------------------|     ,---.
@@ -62,9 +62,9 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------' `-----------'
  */
     KEYMAP( \
-        TRNS,     PWR, SLEP,WAKE,TRNS,MPRV,MNXT,MSTP,MPLY,TRNS,MUTE,VOLD,VOLU,TRNS,TRNS,TRNS,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
+        TRNS,   POWER, PWR ,SLEP,WAKE,TRNS,TRNS,TRNS,TRNS,TRNS,MUTE,VOLD,VOLU,TRNS,TRNS,TRNS,  \
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MRWD,MFFD,MSTP,  \
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPRV,MNXT,MPLY,  \
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,                 \
         TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,       \
         TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS)
