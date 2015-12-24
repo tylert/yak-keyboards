@@ -1,5 +1,5 @@
 /*
-Copyright 2015 Tyler Tidman <tyler.tidman@draak.ca>
+Copyright 2015-2016 Tyler Tidman <tyler.tidman@draak.ca>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
