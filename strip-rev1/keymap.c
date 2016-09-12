@@ -44,9 +44,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Translates key to keycode */
 uint8_t keymap_key_to_keycode(uint8_t layer, keypos_t key)
 {
-    if (layer < KEYMAPS_SIZE) {
+    if (layer < KEYMAPS_SIZE)
+    {
         return pgm_read_byte(&keymaps[(layer)][(key.row)][(key.col)]);
-    } else {
+    }
+    else
+    {
         // fall back to layer 0
         return pgm_read_byte(&keymaps[0][(key.row)][(key.col)]);
     }
@@ -57,10 +60,14 @@ uint8_t keymap_key_to_keycode(uint8_t layer, keypos_t key)
 action_t keymap_fn_to_action(uint8_t keycode)
 {
     action_t action;
-    if (FN_INDEX(keycode) < FN_ACTIONS_SIZE) {
+    if (FN_INDEX(keycode) < FN_ACTIONS_SIZE)
+    {
         action.code = pgm_read_word(&fn_actions[FN_INDEX(keycode)]);
-    } else {
+    }
+    else
+    {
         action.code = ACTION_NO;
     }
+
     return action;
 }
