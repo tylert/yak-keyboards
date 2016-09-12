@@ -1,4 +1,4 @@
-[submodule "tmk_core"]
-	path = tmk_core
+[submodule "tmk_keyboard"]
+	path = tmk_keyboard
 	url = git@github.com:tmk/tmk_keyboard.git
-	branch = core
+	branch = master
