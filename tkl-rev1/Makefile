@@ -42,7 +42,7 @@
 TARGET = yaktkl_lufa
 
 # Directory common source files exist
-TMK_DIR = ../../tmk_core
+TMK_DIR = ../../tmk_keyboard/tmk_core
 
 # Directory keyboard dependent files exist
 TARGET_DIR = .
