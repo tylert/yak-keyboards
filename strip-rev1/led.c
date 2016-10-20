@@ -21,6 +21,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "led.h"
 
 
-void led_set(uint8_t usb_led)
-{
+void led_set(uint8_t usb_led) {
 }

@@ -27,29 +27,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * ScrollLock PB4 (low)
  *
  */
-void led_set(uint8_t usb_led)
-{
+void led_set(uint8_t usb_led) {
     // Set as output
     DDRB |= (1<<0) | (1<<4);
 
-    if (usb_led & (1<<USB_LED_CAPS_LOCK))
-    {
+    if (usb_led & (1<<USB_LED_CAPS_LOCK)) {
         // Output low
         PORTB &= ~(1<<0);
-    }
-    else
-    {
+    } else {
         // Output high
         PORTB |= (1<<0);
     }
 
-    if (usb_led & (1<<USB_LED_SCROLL_LOCK))
-    {
+    if (usb_led & (1<<USB_LED_SCROLL_LOCK)) {
         // Output low
         PORTB &= ~(1<<4);
-    }
-    else
-    {
+    } else {
         // Output high
         PORTB |= (1<<4);
     }
