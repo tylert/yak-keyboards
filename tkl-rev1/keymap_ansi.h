@@ -56,6 +56,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |Ctl|Gui|Alt|          Space                |Alt|Gui|Fn0|Ctl| |Lef|Dow|Rig|
  * `-----------------------------------------------------------' `-----------'
  */
+/*
     KEYMAP( \
         ESC,      F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, PSCR,SLCK,PAUS,  \
         GRV, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   LBRC,RBRC,BSPC,INS, HOME,PGUP,  \
@@ -63,14 +64,15 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         CAPS,A,   O,   E,   U,   I,   D,   H,   T,   N,   S,   MINS,     ENT,                  \
         LSFT,     SCLN,Q,   J,   K,   X,   B,   M,   W,   V,   Z,        RSFT,     UP,         \
         LCTL,LGUI,LALT,               SPC,                RALT,RGUI,FN0, RCTL,LEFT,DOWN,RGHT), \
-/* Overlay 2: Media
+*/
+/* Overlay 1: Media
  * ,---.   ,---------------. ,---------------. ,---------------. ,-----------.
- * |   |   |Pow|Pwr|Slp|Wak| |   |   |   |   | |   |Mut|V- |V+ | |   |   |   |
+ * |   |   |Pow|Pwr|Slp|Wak| |   |   |   |   | |   |   |   |   | |Prv|Nxt|Mut|
  * `---'   `---------------' `---------------' `---------------' `-----------'
  * ,-----------------------------------------------------------. ,-----------.
- * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |Rwd|Ffd|Stp|
+ * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |Ply|Ffd|V+ |
  * |-----------------------------------------------------------| |-----------|
- * |     |   |   |   |   |   |   |   |   |   |   |   |   |     | |Prv|Nxt|Ply|
+ * |     |   |   |   |   |   |   |   |   |   |   |   |   |     | |Stp|Rwd|V- |
  * |-----------------------------------------------------------| `-----------'
  * |      |   |   |   |   |   |   |   |   |   |   |   |        |
  * |-----------------------------------------------------------|     ,---.
@@ -80,9 +82,9 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------' `-----------'
  */
     KEYMAP( \
-        TRNS,   POWER, PWR ,SLEP,WAKE,TRNS,TRNS,TRNS,TRNS,TRNS,MUTE,VOLD,VOLU,TRNS,TRNS,TRNS,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MRWD,MFFD,MSTP,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPRV,MNXT,MPLY,  \
+        TRNS,    POWER,PWR ,SLEP,WAKE,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPRV,MNXT,MUTE,  \
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPLY,MFFD,VOLU,  \
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MSTP,MRWD,VOLD,  \
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,                 \
         TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,       \
         TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS)
