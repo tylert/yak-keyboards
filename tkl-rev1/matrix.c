@@ -40,22 +40,17 @@ static void unselect_rows(void);
 static void select_row(uint8_t row);
 
 
-inline
-uint8_t matrix_rows(void)
-{
+inline uint8_t matrix_rows(void) {
     return MATRIX_ROWS;
 }
 
 
-inline
-uint8_t matrix_cols(void)
-{
+inline uint8_t matrix_cols(void) {
     return MATRIX_COLS;
 }
 
 
-void matrix_init(void)
-{
+void matrix_init(void) {
     unselect_rows();
     init_cols();
 
@@ -67,19 +62,22 @@ void matrix_init(void)
 }
 
 
-uint8_t matrix_scan(void)
-{
+uint8_t matrix_scan(void) {
     for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
         select_row(row);
         _delay_us(3);  // without this wait read unstable value
         uint8_t cols = read_cols();
+
         if (matrix_debouncing[row] != cols) {
             matrix_debouncing[row] = cols;
+
             if (debouncing) {
                 debug("bounce!: "); debug_hex(debouncing); debug("\n");
             }
+
             debouncing = DEBOUNCE;
         }
+
         unselect_rows();
     }
 
@@ -97,42 +95,41 @@ uint8_t matrix_scan(void)
 }
 
 
-bool matrix_is_modified(void)
-{
-    if (debouncing) return false;
+bool matrix_is_modified(void) {
+    if (debouncing) {
+        return false;
+    }
+
     return true;
 }
 
 
-inline
-bool matrix_is_on(uint8_t row, uint8_t col)
-{
+inline bool matrix_is_on(uint8_t row, uint8_t col) {
     return (matrix[row] & ((matrix_row_t)1<<col));
 }
 
 
-inline
-matrix_row_t matrix_get_row(uint8_t row)
-{
+inline matrix_row_t matrix_get_row(uint8_t row) {
     return matrix[row];
 }
 
 
-void matrix_print(void)
-{
+void matrix_print(void) {
     print("\nr/c 0123456789ABCDEF\n");
+
     for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
         xprintf("%02X: %032lb\n", row, bitrev32(matrix_get_row(row)));
     }
 }
 
 
-uint8_t matrix_key_count(void)
-{
+uint8_t matrix_key_count(void) {
     uint8_t count = 0;
+
     for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
         count += bitpop16(matrix[row]);
     }
+
     return count;
 }
 
@@ -142,8 +139,7 @@ uint8_t matrix_key_count(void)
  * pin: F0  F1  E6  C7  C6  B6  D4  B1  B0  B5  B4  D7  D6  B3  (Rev.A)
  * pin:                                 B7                      (Rev.B)
  */
-static void  init_cols(void)
-{
+static void  init_cols(void) {
     // Input with pull-up(DDR:0, PORT:1)
     DDRF  &= ~(1<<0 | 1<<1);
     PORTF |=  (1<<0 | 1<<1);
@@ -158,8 +154,7 @@ static void  init_cols(void)
 }
 
 
-static matrix_row_t read_cols(void)
-{
+static matrix_row_t read_cols(void) {
     return (PINF&(1<<0) ? 0 : (1<<0)) |
            (PINF&(1<<1) ? 0 : (1<<1)) |
            (PINE&(1<<6) ? 0 : (1<<2)) |
@@ -181,16 +176,14 @@ static matrix_row_t read_cols(void)
  * row: 0   1   2   3   4
  * pin: D0  D1  D2  D3  D5
  */
-static void unselect_rows(void)
-{
+static void unselect_rows(void) {
     // Hi-Z(DDR:0, PORT:0) to unselect
     DDRD  &= ~0b00101111;
     PORTD &= ~0b00101111;
 }
 
 
-static void select_row(uint8_t row)
-{
+static void select_row(uint8_t row) {
     // Output low(DDR:1, PORT:0) to select
     switch (row) {
         case 0:

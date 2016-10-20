@@ -43,54 +43,54 @@ static void unselect_cols(void);
 static void select_col(uint8_t col);
 
 
-inline
-uint8_t matrix_rows(void)
-{
+inline uint8_t matrix_rows(void) {
     return MATRIX_ROWS;
 }
 
 
-inline
-uint8_t matrix_cols(void)
-{
+inline uint8_t matrix_cols(void) {
     return MATRIX_COLS;
 }
 
 
-void matrix_init(void)
-{
+void matrix_init(void) {
     unselect_cols();
     init_rows();
 
     // Initialize matrix state: all keys off.
-    for (uint8_t row = 0; row < MATRIX_ROWS; row++)  {
+    for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
         matrix[row] = 0;
         matrix_debouncing[row] = 0;
     }
 }
 
 
-uint8_t matrix_scan(void)
-{
+uint8_t matrix_scan(void) {
     for (uint8_t col = 0; col < MATRIX_COLS; col++) {
         select_col(col);
         _delay_us(3);  // without this wait read unstable value
         uint8_t rows = read_rows();
+
         // Use the otherwise unused col: 0 row: 0 for firmware key
         if(col == 0) {
             rows |= read_fwkey();
         }
+
         for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
             bool prev_bit = matrix_debouncing[row] & ((matrix_row_t)1<<col);
             bool curr_bit = rows & (1<<row);
+
             if (prev_bit != curr_bit) {
                 matrix_debouncing[row] ^= ((matrix_row_t)1<<col);
+
                 if (debouncing) {
                     dprint("bounce!: "); dprintf("%02X", debouncing); dprintln();
                 }
+
                 debouncing = DEBOUNCE;
             }
         }
+
         unselect_cols();
     }
 
@@ -108,42 +108,41 @@ uint8_t matrix_scan(void)
 }
 
 
-bool matrix_is_modified(void)
-{
-    if (debouncing) return false;
+bool matrix_is_modified(void) {
+    if (debouncing) {
+        return false;
+    }
+
     return true;
 }
 
 
-inline
-bool matrix_is_on(uint8_t row, uint8_t col)
-{
+inline bool matrix_is_on(uint8_t row, uint8_t col) {
     return (matrix[row] & ((matrix_row_t)1<<col));
 }
 
 
-inline
-matrix_row_t matrix_get_row(uint8_t row)
-{
+inline matrix_row_t matrix_get_row(uint8_t row) {
     return matrix[row];
 }
 
 
-void matrix_print(void)
-{
+void matrix_print(void) {
     print("\nr/c 0123456789ABCDEF\n");
+
     for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
         xprintf("%02X: %032lb\n", row, bitrev32(matrix_get_row(row)));
     }
 }
 
 
-uint8_t matrix_key_count(void)
-{
+uint8_t matrix_key_count(void) {
     uint8_t count = 0;
+
     for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
         count += bitpop32(matrix[row]);
     }
+
     return count;
 }
 
@@ -154,8 +153,7 @@ uint8_t matrix_key_count(void)
  *
  * Firmware uses pin PE2
  */
-static void init_rows(void)
-{
+static void init_rows(void) {
     DDRD  &= ~0b00101111;
     PORTD |=  0b00101111;
 
@@ -167,8 +165,7 @@ static void init_rows(void)
 }
 
 
-static uint8_t read_rows(void)
-{
+static uint8_t read_rows(void) {
     return (PIND&(1<<0) ? (1<<0) : 0) |
            (PIND&(1<<1) ? (1<<1) : 0) |
            (PIND&(1<<2) ? (1<<2) : 0) |
@@ -178,8 +175,7 @@ static uint8_t read_rows(void)
 }
 
 
-static uint8_t read_fwkey(void)
-{
+static uint8_t read_fwkey(void) {
     return PINE&(1<<2) ? 0 : (1<<0);
 }
 
@@ -188,8 +184,7 @@ static uint8_t read_fwkey(void)
  * col: 0    1    2    3
  * pin: PF0  PF1  PC7  PC6
  */
-static void unselect_cols(void)
-{
+static void unselect_cols(void) {
     DDRF |=   0b00000011;
     PORTF &= ~0b00000011;
     DDRC |=   0b11000000;
@@ -197,8 +192,7 @@ static void unselect_cols(void)
 }
 
 
-static void select_col(uint8_t col)
-{
+static void select_col(uint8_t col) {
     switch (col) {
         case 0:
             PORTF |= (1<<0);
