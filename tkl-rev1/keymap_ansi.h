@@ -28,9 +28,9 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-----------------------------------------------------------| `-----------'
  * |Caps  |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|Return  |
  * |-----------------------------------------------------------|     ,---.
- * |Shft    |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     |     |Up |
+ * |Shift   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     |     |Up |
  * |-----------------------------------------------------------| ,-----------.
- * |Ctl|Gui|Alt|          Space                |Alt|Gui|Fn0|Ctl| |Lef|Dow|Rig|
+ * |Ctl|Gui|Alt|          Space                |Alt|Gui|Fn0|Ctl| |Lft|Dwn|Rgt|
  * `-----------------------------------------------------------' `-----------'
  */
     KEYMAP( \
@@ -51,9 +51,9 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-----------------------------------------------------------| `-----------'
  * |Caps  |  A|  O|  E|  U|  I|  D|  H|  T|  N|  S|  -|Return  |
  * |-----------------------------------------------------------|     ,---.
- * |Shft    |  ;|  Q|  J|  K|  X|  B|  M|  W|  V|  Z|Shift     |     |Up |
+ * |Shift   |  ;|  Q|  J|  K|  X|  B|  M|  W|  V|  Z|Shift     |     |Up |
  * |-----------------------------------------------------------| ,-----------.
- * |Ctl|Gui|Alt|          Space                |Alt|Gui|Fn0|Ctl| |Lef|Dow|Rig|
+ * |Ctl|Gui|Alt|          Space                |Alt|Gui|Fn0|Ctl| |Lft|Dwn|Rgt|
  * `-----------------------------------------------------------' `-----------'
  */
 /*
