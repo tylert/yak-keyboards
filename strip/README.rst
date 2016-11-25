@@ -3,7 +3,7 @@
 YAK Tester 17 Strip
 ===================
 
-.. image:: yak-tester.png
+.. image:: yak-strip.png
 
 * http://www.keyboard-layout-editor.com/#/gists/df36e056d5bb9e1c0cb5
 
