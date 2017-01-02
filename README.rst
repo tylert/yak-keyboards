@@ -17,6 +17,9 @@ Resources
 
 * https://github.com/tmk/tmk_keyboard
 
+* https://geekhack.org
+* https://deskthority.net
+
 
 Plates
 ======
