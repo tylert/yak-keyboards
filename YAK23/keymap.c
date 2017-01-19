@@ -31,18 +31,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KEYMAP( \
     K5A, K5B, K5C, K5D, \
     K4A, K4B, K4C, K4D, \
-    K3A, K3B, K3C, K3D, \
-    K2A, K2B, K2C,      \
-    K1A, K1B, K1C, K1D, \
-    K0A, K0B            \
+    K3A, K3B, K3C,      \
+    K2A, K2B, K2C, K2D, \
+    K1A, K1B, K1C,      \
+    K0A,      K0C, K0D  \
 ) { \
 /*             0         1         2         3    */ \
 /* 5 */   { KC_##K5A, KC_##K5B, KC_##K5C, KC_##K5D}, \
 /* 4 */   { KC_##K4A, KC_##K4B, KC_##K4C, KC_##K4D}, \
-/* 3 */   { KC_##K3A, KC_##K3B, KC_##K3C, KC_##K3D}, \
-/* 2 */   { KC_##K2A, KC_##K2B, KC_##K2C, KC_NO   }, \
-/* 1 */   { KC_##K1A, KC_##K1B, KC_##K1C, KC_##K1D}, \
-/* 0 */   { KC_##K0A, KC_##K0B, KC_NO,    KC_NO   }  \
+/* 3 */   { KC_##K3A, KC_##K3B, KC_##K3C, KC_NO   }, \
+/* 2 */   { KC_##K2A, KC_##K2B, KC_##K2C, KC_##K2D}, \
+/* 1 */   { KC_##K1A, KC_##K1B, KC_##K1C, KC_NO   }, \
+/* 0 */   { KC_##K0A, KC_NO,    KC_##K0C, KC_##K0D}  \
 }
 
 #include "keymap_pad.h"
