@@ -20,6 +20,9 @@ Resources
 * https://geekhack.org
 * https://deskthority.net
 
+* http://blog.roastpotatoes.co/2015/03/30/introduction-to-the-tmk-firmware/
+* https://deskthority.net/workshop-f7/how-to-build-your-very-own-keyboard-firmware-t7177.html
+
 
 Plates
 ======

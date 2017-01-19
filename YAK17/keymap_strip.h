@@ -17,13 +17,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-/* Keymap 0:  Default
+/* Keymap 0:  Media Keys
  * ,-------------------------------------------------------------------.
- * |FN1|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ * |FN1|   |   |   |   |   |   |   |   |   |   |   |   |   |V- |V+ |Mut|
  * `-------------------------------------------------------------------'
  */
     KEYMAP( \
-        FN1,     ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ), \
+        FN1,     ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,VOLD,VOLU,MUTE), \
 /* Keymap 1:  Other
  * ,-------------------------------------------------------------------.
  * |   |F13|F14|F15|F16|F17|F18|F19|F20|F21|F22|F23|F24|   |   |   |FN0|
