@@ -19,22 +19,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0:  Media Keys
  * ,-------------------------------------------------------------------.
- * |FN1|   |   |   |   |   |   |   |   |   |   |   |   |   |V- |V+ |Mut|
+ * |FN0|   |   |   |   |   |   |   |   |   |   |   |   |   |V- |V+ |Mut|
  * `-------------------------------------------------------------------'
  */
     KEYMAP( \
-        FN1,     ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,VOLD,VOLU,MUTE), \
-/* Keymap 1:  Other
+        FN0,     ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    ,VOLD,VOLU,MUTE), \
+/* Keymap 1:  Other and Layer Keys
  * ,-------------------------------------------------------------------.
- * |   |F13|F14|F15|F16|F17|F18|F19|F20|F21|F22|F23|F24|   |   |   |FN0|
+ * |   |F13|F14|F15|F16|F17|F18|F19|F20|F21|F22|F23|F24|   |   |   |FN1|
  * `-------------------------------------------------------------------'
  */
     KEYMAP( \
-        TRNS,F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24, TRNS,TRNS,TRNS,FN0 )
+        TRNS,F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24, TRNS,TRNS,TRNS,FN1 )
 };
 
 
 static const uint16_t PROGMEM fn_actions[] = {
-    [0] = ACTION_FUNCTION(TEENSY_KEY),
-    [1] = ACTION_LAYER_MOMENTARY(1)
+    [0] = ACTION_LAYER_MOMENTARY(1),
+    [1] = ACTION_FUNCTION(TEENSY_KEY),
 };

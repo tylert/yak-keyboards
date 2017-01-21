@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0:  Number Pad
  * ,---------------.
- * |FN1|   |   |Bks|
+ * |FN0|   |   |Bks|
  * `---------------'
  * ,---------------.
  * |Num|/  |*  |-  |
@@ -34,39 +34,62 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `---------------'
  */
     KEYMAP( \
-        FN1, NO,  NO,  BSPC,  \
+        FN0, NO,  NO,  BSPC,  \
         NLCK,PSLS,PAST,PMNS,  \
         P7,  P8,  P9,         \
         P4,  P5,  P6,  PPLS,  \
         P1,  P2,  P3,         \
         P0,       PDOT,PENT), \
-/* Keymap 1:  Other
+/* Keymap 1:  Media Keys
  * ,---------------.
- * |   |   |   |   |
+ * |   |   |   |Mut|
  * `---------------'
  * ,---------------.
+ * |   |   |   |V- |
+ * |---------------|
+ * |   |   |   |   |
+ * |------------V+ |
  * |   |   |   |   |
  * |---------------|
  * |   |   |   |   |
  * |------------   |
- * |   |   |   |   |
- * |---------------|
- * |   |   |   |   |
- * |------------   |
- * |FN0    |   |   |
+ * |       |   |   |
  * `---------------'
  */
     KEYMAP( \
-        TRNS,TRNS,TRNS,TRNS,  \
+        TRNS,TRNS,TRNS,MUTE,  \
+        TRNS,TRNS,TRNS,VOLD,  \
+        TRNS,TRNS,TRNS,       \
+        TRNS,TRNS,TRNS,VOLU,  \
+        TRNS,TRNS,TRNS,       \
+        TRNS,     TRNS,TRNS), \
+/* Keymap 2:  Layer Keys
+ * ,---------------.
+ * |   |FN2|   |   |
+ * `---------------'
+ * ,---------------.
+ * |   |   |   |   |
+ * |---------------|
+ * |   |   |   |   |
+ * |------------   |
+ * |   |   |   |   |
+ * |---------------|
+ * |   |   |   |   |
+ * |------------   |
+ * |FN1    |   |   |
+ * `---------------'
+ */
+    KEYMAP( \
+        TRNS,FN2, TRNS,TRNS,  \
         TRNS,TRNS,TRNS,TRNS,  \
         TRNS,TRNS,TRNS,       \
         TRNS,TRNS,TRNS,TRNS,  \
         TRNS,TRNS,TRNS,       \
-        FN0,      TRNS,TRNS)
+        FN1,      TRNS,TRNS)
 };
 
 
 static const uint16_t PROGMEM fn_actions[] = {
-    [0] = ACTION_FUNCTION(TEENSY_KEY),
-    [1] = ACTION_LAYER_MOMENTARY(1)
+    [0] = ACTION_LAYER_MOMENTARY(1),
+    [1] = ACTION_FUNCTION(TEENSY_KEY),
 };
