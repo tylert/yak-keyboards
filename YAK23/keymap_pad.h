@@ -17,9 +17,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-/* Keymap 0:  Number Pad
+/* Keymap 0:  Number Pad Keys
  * ,---------------.
- * |FN0|   |   |Bks|
+ * |FN2|   |   |Bks|
  * `---------------'
  * ,---------------.
  * |Num|/  |*  |-  |
@@ -34,7 +34,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `---------------'
  */
     KEYMAP( \
-        FN0, NO,  NO,  BSPC,  \
+        FN2, NO,  NO,  BSPC,  \
         NLCK,PSLS,PAST,PMNS,  \
         P7,  P8,  P9,         \
         P4,  P5,  P6,  PPLS,  \
@@ -65,7 +65,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TRNS,     TRNS,TRNS), \
 /* Keymap 2:  Layer Keys
  * ,---------------.
- * |   |FN2|   |   |
+ * |   |   |   |FN3|
  * `---------------'
  * ,---------------.
  * |   |   |   |   |
@@ -75,21 +75,23 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |   |   |   |   |
  * |---------------|
  * |   |   |   |   |
- * |------------   |
- * |FN1    |   |   |
+ * |------------FN1|
+ * |FN0    |   |   |
  * `---------------'
  */
     KEYMAP( \
-        TRNS,FN2, TRNS,TRNS,  \
+        TRNS,TRNS,TRNS,FN3,   \
         TRNS,TRNS,TRNS,TRNS,  \
         TRNS,TRNS,TRNS,       \
         TRNS,TRNS,TRNS,TRNS,  \
         TRNS,TRNS,TRNS,       \
-        FN1,      TRNS,TRNS)
+        FN0,      TRNS,FN1 )
 };
 
 
 static const uint16_t PROGMEM fn_actions[] = {
-    [0] = ACTION_LAYER_MOMENTARY(1),
-    [1] = ACTION_FUNCTION(TEENSY_KEY),
+    [0] = ACTION_DEFAULT_LAYER_SET(0),
+    [1] = ACTION_DEFAULT_LAYER_SET(1),
+    [2] = ACTION_LAYER_MOMENTARY(2),
+    [3] = ACTION_FUNCTION(TEENSY_KEY),
 };
