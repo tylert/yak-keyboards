@@ -60,7 +60,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
         TRNS,TRNS,TRNS,F,   P,   G,   J,   L,   U,   Y,   ;,   TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
-        TRNS,TRNS,R,   S,   T,   D,   H,   N,   E,   I,   O,   TRNS,     TRNS,                 \
+        TRNS,TRNS,R,   S,   T,   D,   TRNS,N,   E,   I,   O,   TRNS,     TRNS,                 \
         TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,K,   TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,       \
         TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS), \
 /* Keymap 2:  Dvorak Keys
