@@ -30,7 +30,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-----------------------------------------------------------|     ,---.
  * |Shift   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     |     |UP |
  * |-----------------------------------------------------------| ,-----------.
- * |Ctl|Gui|Alt|          Space                |Alt|Gui|FN4|Ctl| |Lft|Dwn|Rgt|
+ * |Ctl|Gui|Alt|          Space                |Alt|Gui|FN5|Ctl| |Lft|Dwn|Rgt|
  * `-----------------------------------------------------------' `-----------'
  */
     KEYMAP( \
@@ -39,7 +39,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS,DEL, END, PGDN,  \
         CAPS,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,                  \
         LSFT,     Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RSFT,     UP,         \
-        LCTL,LGUI,LALT,               SPC,                RALT,RGUI,FN4, RCTL,LEFT,DOWN,RGHT), \
+        LCTL,LGUI,LALT,               SPC,                RALT,RGUI,FN5, RCTL,LEFT,DOWN,RGHT), \
 /* Keymap 1:  Colemak Keys
  * ,---.   ,---------------. ,---------------. ,---------------. ,-----------.
  * |   |   |   |   |   |   | |   |   |   |   | |   |   |   |   | |   |   |   |
@@ -109,9 +109,32 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LCTL,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,                 \
         TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,       \
         CAPS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS), \
-/* Keymap 4:  Media and Layer Select Keys
+/* Keymap 4:  macOS Keys
  * ,---.   ,---------------. ,---------------. ,---------------. ,-----------.
- * |FN5|   |   |   |   |   | |CAL|   |   |   | |   |PWR|Slp|Wak| |Prv|Nxt|Mut|
+ * |   |   |   |   |   |   | |   |   |   |   | |   |   |   |   | |   |   |   |
+ * `---'   `---------------' `---------------' `---------------' `-----------'
+ * ,-----------------------------------------------------------. ,-----------.
+ * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |   |   |   |
+ * |-----------------------------------------------------------| |-----------|
+ * |     |   |   |   |   |   |   |   |   |   |   |   |   |     | |   |   |   |
+ * |-----------------------------------------------------------| `-----------'
+ * |      |   |   |   |   |   |   |   |   |   |   |   |        |
+ * |-----------------------------------------------------------|     ,---.
+ * |        |   |   |   |   |   |   |   |   |   |   |          |     |   |
+ * |-----------------------------------------------------------| ,-----------.
+ * |   |   |   |                               |   |   |   |   | |   |   |   |
+ * `-----------------------------------------------------------' `-----------'
+ */
+    KEYMAP( \
+        TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,                 \
+        TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,       \
+        TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS), \
+/* Keymap 5:  Media and Layer Select Keys
+ * ,---.   ,---------------. ,---------------. ,---------------. ,-----------.
+ * |FN6|   |   |   |   |   | |CAL|   |   |   | |   |PWR|Slp|Wak| |Prv|Nxt|Mut|
  * `---'   `---------------' `---------------' `---------------' `-----------'
  * ,-----------------------------------------------------------. ,-----------.
  * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |Ply|Ffd|V+ |
@@ -122,16 +145,16 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-----------------------------------------------------------|     ,---.
  * |        |   |   |FN2|   |   |   |   |   |   |   |          |     |   |
  * |-----------------------------------------------------------| ,-----------.
- * |   |   |   |                               |   |   |   |   | |   |   |   |
+ * |   |FN4|   |                               |   |   |   |   | |   |   |   |
  * `-----------------------------------------------------------' `-----------'
  */
     KEYMAP( \
-        FN5,      TRNS,TRNS,TRNS,TRNS,CALC,TRNS,TRNS,TRNS,TRNS,PWR, SLEP,WAKE,MPRV,MNXT,MUTE,  \
+        FN6,      TRNS,TRNS,TRNS,TRNS,CALC,TRNS,TRNS,TRNS,TRNS,PWR, SLEP,WAKE,MPRV,MNXT,MUTE,  \
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPLY,MFFD,VOLU,  \
         TRNS,FN0, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MSTP,MRWD,VOLD,  \
         FN3, TRNS,TRNS,FN1, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,                 \
         TRNS,     TRNS,FN2, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,       \
-        TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS), \
+        TRNS,FN4, TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS), \
 };
 
 
@@ -140,6 +163,7 @@ static const uint16_t PROGMEM fn_actions[] = {
     [1] = ACTION_DEFAULT_LAYER_SET(1),
     [2] = ACTION_DEFAULT_LAYER_SET(2),
     [3] = ACTION_LAYER_TOGGLE(3),
-    [4] = ACTION_LAYER_MOMENTARY(4),
-    [5] = ACTION_FUNCTION(TEENSY_KEY),
+    [4] = ACTION_LAYER_TOGGLE(4),
+    [5] = ACTION_LAYER_MOMENTARY(5),
+    [6] = ACTION_FUNCTION(TEENSY_KEY),
 };
