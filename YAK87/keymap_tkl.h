@@ -19,18 +19,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0:  Qwerty Keys
  * ,---.   ,---------------. ,---------------. ,---------------. ,-----------.
- * |ESC|   |F1 |F2 |F3 |F4 | |F5 |F6 |F7 |F8 | |F9 |F10|F11|F12| |PrS|ScL|Pau|
+ * |Esc|   |F1 |F2 |F3 |F4 | |F5 |F6 |F7 |F8 | |F9 |F10|F11|F12| |PrS|ScL|Pau|
  * `---'   `---------------' `---------------' `---------------' `-----------'
  * ,-----------------------------------------------------------. ,-----------.
- * |`  |  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|Backsp | |INS|Hom|PgU|
+ * |`  |  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|Backsp | |Ins|Hom|PgU|
  * |-----------------------------------------------------------| |-----------|
- * |TAB  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|    \| |DEL|END|PgD|
+ * |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|    \| |Del|End|PgD|
  * |-----------------------------------------------------------| `-----------'
- * |CAPS  |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|Enter   |
+ * |Caps  |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|Enter   |
  * |-----------------------------------------------------------|     ,---.
- * |Shift   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     |     |UP |
+ * |Shift   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     |     |Up |
  * |-----------------------------------------------------------| ,-----------.
- * |Ctl|Gui|Alt|          Space                |Alt|Gui|FN5|Ctl| |Lft|Dwn|Rgt|
+ * |Ctl|Gui|Alt|          Space                |Alt|Gui|Fn3|Ctl| |Lft|Dwn|Rgt|
  * `-----------------------------------------------------------' `-----------'
  */
     KEYMAP( \
@@ -39,7 +39,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS,DEL, END, PGDN,  \
         CAPS,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,                  \
         LSFT,     Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RSFT,     UP,         \
-        LCTL,LGUI,LALT,               SPC,                RALT,RGUI,FN5, RCTL,LEFT,DOWN,RGHT), \
+        LCTL,LGUI,LALT,               SPC,                RALT,RGUI,FN3, RCTL,LEFT,DOWN,RGHT), \
 /* Keymap 1:  Colemak Keys
  * ,---.   ,---------------. ,---------------. ,---------------. ,-----------.
  * |   |   |   |   |   |   | |   |   |   |   | |   |   |   |   | |   |   |   |
@@ -86,75 +86,29 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TRNS,TRNS,O,   E,   U,   I,   D,   H,   T,   N,   S,   MINS,     TRNS,                 \
         TRNS,     SCLN,Q,   J,   K,   X,   B,   TRNS,W,   V,   Z,        TRNS,     TRNS,       \
         TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS), \
-/* Keymap 3:  CAPS Lock and Ctrl Keys
+/* Keymap 3:  Media and Layer Select Keys
  * ,---.   ,---------------. ,---------------. ,---------------. ,-----------.
- * |   |   |   |   |   |   | |   |   |   |   | |   |   |   |   | |   |   |   |
+ * |Fn4|   |   |   |   |   | |Cal|   |   |   | |   |Pwr|Slp|Wak| |Prv|Nxt|Mut|
  * `---'   `---------------' `---------------' `---------------' `-----------'
  * ,-----------------------------------------------------------. ,-----------.
- * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |   |   |   |
+ * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |Ply|Ffd|V+ |
  * |-----------------------------------------------------------| |-----------|
- * |     |   |   |   |   |   |   |   |   |   |   |   |   |     | |   |   |   |
+ * |     |Fn0|   |   |   |   |   |   |   |   |   |   |   |     | |Stp|Rwd|V- |
  * |-----------------------------------------------------------| `-----------'
- * |Ctrl  |   |   |   |   |   |   |   |   |   |   |   |        |
+ * |      |   |   |Fn1|   |   |   |   |   |   |   |   |        |
  * |-----------------------------------------------------------|     ,---.
- * |        |   |   |   |   |   |   |   |   |   |   |          |     |   |
- * |-----------------------------------------------------------| ,-----------.
- * |CAP|   |   |                               |   |   |   |   | |   |   |   |
- * `-----------------------------------------------------------' `-----------'
- */
-    KEYMAP( \
-        TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
-        LCTL,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,                 \
-        TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,       \
-        CAPS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS), \
-/* Keymap 4:  macOS Keys
- * ,---.   ,---------------. ,---------------. ,---------------. ,-----------.
- * |   |   |   |   |   |   | |   |   |   |   | |   |   |   |   | |   |   |   |
- * `---'   `---------------' `---------------' `---------------' `-----------'
- * ,-----------------------------------------------------------. ,-----------.
- * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |   |   |   |
- * |-----------------------------------------------------------| |-----------|
- * |     |   |   |   |   |   |   |   |   |   |   |   |   |     | |   |   |   |
- * |-----------------------------------------------------------| `-----------'
- * |      |   |   |   |   |   |   |   |   |   |   |   |        |
- * |-----------------------------------------------------------|     ,---.
- * |        |   |   |   |   |   |   |   |   |   |   |          |     |   |
+ * |        |   |   |Fn2|   |   |   |   |   |   |   |          |     |   |
  * |-----------------------------------------------------------| ,-----------.
  * |   |   |   |                               |   |   |   |   | |   |   |   |
  * `-----------------------------------------------------------' `-----------'
  */
     KEYMAP( \
-        TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,                 \
-        TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,       \
-        TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS), \
-/* Keymap 5:  Media and Layer Select Keys
- * ,---.   ,---------------. ,---------------. ,---------------. ,-----------.
- * |FN6|   |   |   |   |   | |CAL|   |   |   | |   |PWR|Slp|Wak| |Prv|Nxt|Mut|
- * `---'   `---------------' `---------------' `---------------' `-----------'
- * ,-----------------------------------------------------------. ,-----------.
- * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |Ply|Ffd|V+ |
- * |-----------------------------------------------------------| |-----------|
- * |     |FN0|   |   |   |   |   |   |   |   |   |   |   |     | |Stp|Rwd|V- |
- * |-----------------------------------------------------------| `-----------'
- * |FN3   |   |   |FN1|   |   |   |   |   |   |   |   |        |
- * |-----------------------------------------------------------|     ,---.
- * |        |   |   |FN2|   |   |   |   |   |   |   |          |     |   |
- * |-----------------------------------------------------------| ,-----------.
- * |   |FN4|   |                               |   |   |   |   | |   |   |   |
- * `-----------------------------------------------------------' `-----------'
- */
-    KEYMAP( \
-        FN6,      TRNS,TRNS,TRNS,TRNS,CALC,TRNS,TRNS,TRNS,TRNS,PWR, SLEP,WAKE,MPRV,MNXT,MUTE,  \
+        FN4,      TRNS,TRNS,TRNS,TRNS,CALC,TRNS,TRNS,TRNS,TRNS,PWR, SLEP,WAKE,MPRV,MNXT,MUTE,  \
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPLY,MFFD,VOLU,  \
         TRNS,FN0, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MSTP,MRWD,VOLD,  \
-        FN3, TRNS,TRNS,FN1, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,                 \
+        TRNS,TRNS,TRNS,FN1, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,                 \
         TRNS,     TRNS,FN2, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,       \
-        TRNS,FN4, TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS), \
+        TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS), \
 };
 
 
@@ -162,8 +116,6 @@ static const uint16_t PROGMEM fn_actions[] = {
     [0] = ACTION_DEFAULT_LAYER_SET(0),
     [1] = ACTION_DEFAULT_LAYER_SET(1),
     [2] = ACTION_DEFAULT_LAYER_SET(2),
-    [3] = ACTION_LAYER_TOGGLE(3),
-    [4] = ACTION_LAYER_TOGGLE(4),
-    [5] = ACTION_LAYER_MOMENTARY(5),
-    [6] = ACTION_FUNCTION(TEENSY_KEY),
+    [3] = ACTION_LAYER_MOMENTARY(3),
+    [4] = ACTION_FUNCTION(TEENSY_KEY),
 };
