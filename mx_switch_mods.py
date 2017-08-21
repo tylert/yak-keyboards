@@ -61,20 +61,20 @@ swaps.remove(('80 cN', 'Brown'))  # use 80 cN Clear instead
 # More totally useless combinations
 swaps.remove(('60 cN', 'Grey linear'))  # same as Black
 swaps.remove(('80 cN', 'Black'))  # same as Grey linear
-#swaps.remove(('80 cN', 'Blue'))  # same as Green
+# swaps.remove(('80 cN', 'Blue'))  # same as Green
 
 # Other combinations that may be too subtle
-#swaps.remove(('50 cN', 'Black'))  # too close to Red
-#swaps.remove(('50 cN', 'Clear'))  # too close to Brown  <-- "Ergo Clear"
-#swaps.remove(('50 cN', 'Grey linear'))  # too close to Red
-#swaps.remove(('60 cN', 'Blue'))  # spare 50 cN Black  <-- "Ghetto Green"
-#swaps.remove(('60 cN', 'Clear'))  # too close to Clear  <-- "Panda Clear"
-#swaps.remove(('65 cN', 'Black'))  # too close to Black
-#swaps.remove(('65 cN', 'Blue'))  # spare 50 cN Clear
-#swaps.remove(('65 cN', 'Grey linear'))  # too close to Black
+# swaps.remove(('50 cN', 'Black'))  # too close to Red
+# swaps.remove(('50 cN', 'Clear'))  # too close to Brown  <-- "Ergo Clear"
+# swaps.remove(('50 cN', 'Grey linear'))  # too close to Red
+# swaps.remove(('60 cN', 'Blue'))  # spare 50 cN Black  <-- "Ghetto Green"
+# swaps.remove(('60 cN', 'Clear'))  # too close to Clear  <-- "Panda Clear"
+# swaps.remove(('65 cN', 'Black'))  # too close to Black
+# swaps.remove(('65 cN', 'Blue'))  # spare 50 cN Clear
+# swaps.remove(('65 cN', 'Grey linear'))  # too close to Black
 
 keys = ['{spring} {stem}'.format(spring=pair[0], stem=pair[1])
-    for pair in swaps]
+        for pair in swaps]
 
 keys.extend(stems)
 

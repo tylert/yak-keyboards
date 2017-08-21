@@ -22,6 +22,8 @@ Resources
 
 * http://blog.roastpotatoes.co/2015/03/30/introduction-to-the-tmk-firmware/
 * https://deskthority.net/workshop-f7/how-to-build-your-very-own-keyboard-firmware-t7177.html
+* https://www.reddit.com/r/MechanicalKeyboards/wiki/firmware
+* https://docs.qmk.fm/
 
 
 Plates
