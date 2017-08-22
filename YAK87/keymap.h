@@ -91,9 +91,9 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |Fn4|   |   |   |   |   | |Cal|   |   |   | |   |Pwr|Slp|Wak| |Prv|Nxt|Mut|
  * `---'   `---------------' `---------------' `---------------' `-----------'
  * ,-----------------------------------------------------------. ,-----------.
- * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |Ply|Ffd|V+ |
+ * |   |   |   |   |   |   |   |   |   |   |   |   |   |       | |Rwd|Ffd|V+ |
  * |-----------------------------------------------------------| |-----------|
- * |     |Fn0|   |   |   |   |   |   |   |   |   |   |   |     | |Stp|Rwd|V- |
+ * |     |Fn0|   |   |   |   |   |   |   |   |   |   |   |     | |Stp|Ply|V- |
  * |-----------------------------------------------------------| `-----------'
  * |      |   |   |Fn1|   |   |   |   |   |   |   |   |        |
  * |-----------------------------------------------------------|     ,---.
@@ -104,8 +104,8 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
     KEYMAP( \
         FN4,      TRNS,TRNS,TRNS,TRNS,CALC,TRNS,TRNS,TRNS,TRNS,PWR, SLEP,WAKE,MPRV,MNXT,MUTE,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPLY,MFFD,VOLU,  \
-        TRNS,FN0, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MSTP,MRWD,VOLD,  \
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MRWD,MFFD,VOLU,  \
+        TRNS,FN0, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MSTP,MPLY,VOLD,  \
         TRNS,TRNS,TRNS,FN1, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,                 \
         TRNS,     TRNS,FN2, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,       \
         TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS), \
