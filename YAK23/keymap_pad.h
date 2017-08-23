@@ -16,6 +16,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 
+#ifndef __KEYMAP_PAD_H__
+#define __KEYMAP_PAD_H__
+
 #include <stdint.h>
 #include <stdbool.h>
 #include <avr/pgmspace.h>
@@ -26,6 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "host.h"
 #include "debug.h"
 #include "keymap.h"
+
 
 /* Map physical keyboard layout to matrix array */
 #define KEYMAP( \
@@ -44,8 +48,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* 1 */   { KC_##K1A, KC_##K1B, KC_##K1C, KC_NO   }, \
 /* 0 */   { KC_##K0A, KC_NO,    KC_##K0C, KC_##K0D}  \
 }
-
-#include "keymap.h"
 
 #define KEYMAPS_SIZE    (sizeof(keymaps) / sizeof(keymaps[0]))
 #define FN_ACTIONS_SIZE (sizeof(fn_actions) / sizeof(fn_actions[0]))
@@ -74,3 +76,5 @@ action_t keymap_fn_to_action(uint8_t keycode) {
 
     return action;
 }
+
+#endif  /* __KEYMAP_PAD_H__ */

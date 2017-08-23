@@ -48,7 +48,7 @@ TMK_DIR = ../../tmk_keyboard/tmk_core
 TARGET_DIR = .
 
 # List C source files here. (C dependencies are automatically generated.)
-SRC =	keymap.c \
+SRC =	keymap_strip.c \
 	matrix.c \
 	led.c
 

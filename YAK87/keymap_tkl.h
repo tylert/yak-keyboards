@@ -16,8 +16,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 
-#ifndef KEYMAP_COMMON_H
-#define KEYMAP_COMMON_H
+#ifndef __KEYMAP_TKL_H__
+#define __KEYMAP_TKL_H__
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -77,4 +77,4 @@ action_t keymap_fn_to_action(uint8_t keycode) {
     return action;
 }
 
-#endif  /* KEYMAP_COMMON_H */
+#endif  /* __KEYMAP_TKL_H__ */
