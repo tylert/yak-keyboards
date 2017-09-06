@@ -25,6 +25,17 @@ Resources
 * https://www.reddit.com/r/MechanicalKeyboards/wiki/firmware
 * https://docs.qmk.fm/
 
+* http://www.pjrc.com/teensy/usb_keyboard.html
+* http://www.dribin.org/dave/keyboard/
+* http://blog.komar.be/how-to-make-a-keyboard-the-matrix/
+* http://webpages.charter.net/coinopcauldron/swarticle.html
+
+* https://github.com/Tranquilite0/Teensy-Keyboard
+* https://github.com/BathroomEpiphanies/AVR-Keyboard
+* https://github.com/kiibohd/controller
+* https://github.com/frobiac/adnw
+* https://github.com/humblehacker/firmware
+
 
 Plates
 ======
