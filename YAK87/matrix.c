@@ -34,20 +34,10 @@ static uint8_t debouncing = DEBOUNCE;
 static matrix_row_t matrix[MATRIX_ROWS];
 static matrix_row_t matrix_debouncing[MATRIX_ROWS];
 
-static uint8_t read_cols(void);
+static matrix_row_t read_cols(void);
 static void init_cols(void);
 static void unselect_rows(void);
 static void select_row(uint8_t row);
-
-
-inline uint8_t matrix_rows(void) {
-    return MATRIX_ROWS;
-}
-
-
-inline uint8_t matrix_cols(void) {
-    return MATRIX_COLS;
-}
 
 
 void matrix_init(void) {
@@ -65,8 +55,8 @@ void matrix_init(void) {
 uint8_t matrix_scan(void) {
     for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
         select_row(row);
-        _delay_us(3);  // without this wait read unstable value
-        uint8_t cols = read_cols();
+        _delay_us(30);  // without this wait read unstable value
+        matrix_row_t cols = read_cols();
 
         if (matrix_debouncing[row] != cols) {
             matrix_debouncing[row] = cols;
@@ -95,42 +85,8 @@ uint8_t matrix_scan(void) {
 }
 
 
-bool matrix_is_modified(void) {
-    if (debouncing) {
-        return false;
-    }
-
-    return true;
-}
-
-
-inline bool matrix_is_on(uint8_t row, uint8_t col) {
-    return (matrix[row] & ((matrix_row_t)1<<col));
-}
-
-
 inline matrix_row_t matrix_get_row(uint8_t row) {
     return matrix[row];
-}
-
-
-void matrix_print(void) {
-    print("\nr/c 0123456789ABCDEF\n");
-
-    for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
-        xprintf("%02X: %032lb\n", row, bitrev32(matrix_get_row(row)));
-    }
-}
-
-
-uint8_t matrix_key_count(void) {
-    uint8_t count = 0;
-
-    for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
-        count += bitpop16(matrix[row]);
-    }
-
-    return count;
 }
 
 
