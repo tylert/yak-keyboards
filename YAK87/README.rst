@@ -1,7 +1,7 @@
 .. image:: ../yak.png
 
-YAK TKL 87 ANSI
-===============
+YAK87 TKL ANSI
+==============
 
 .. image:: yak-tkl.png
 
