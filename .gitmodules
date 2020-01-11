@@ -1,4 +1,0 @@
-[submodule "tmk_keyboard"]
-	path = tmk_keyboard
-	url = https://github.com/tmk/tmk_keyboard.git
-	branch = master
