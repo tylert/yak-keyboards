@@ -12,6 +12,9 @@ Resources
 * http://builder.swillkb.com/
 * https://github.com/swill/kb_builder
 
+* https://kbfirmware.com/
+* https://github.com/ruiqimao/qmkbuilder
+
 * http://kalerator.clueboard.co/
 * https://github.com/skullydazed/kalerator
 
