@@ -23,6 +23,7 @@ Resources
 * https://geekhack.org
 * https://deskthority.net
 
+* https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/
 * http://blog.roastpotatoes.co/2015/03/30/introduction-to-the-tmk-firmware/
 * https://deskthority.net/workshop-f7/how-to-build-your-very-own-keyboard-firmware-t7177.html
 * https://www.reddit.com/r/MechanicalKeyboards/wiki/firmware
