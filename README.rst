@@ -8,37 +8,32 @@ Resources
 
 * http://www.keyboard-layout-editor.com/
 * https://github.com/ijprest/keyboard-layout-editor
-
 * http://builder.swillkb.com/
 * https://github.com/swill/kb_builder
-
 * https://kbfirmware.com/
 * https://github.com/ruiqimao/qmkbuilder
-
 * http://kalerator.clueboard.co/
 * https://github.com/skullydazed/kalerator
-
 * https://github.com/tmk/tmk_keyboard
-
 * https://geekhack.org
 * https://deskthority.net
-
 * https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/
 * http://blog.roastpotatoes.co/2015/03/30/introduction-to-the-tmk-firmware/
 * https://deskthority.net/workshop-f7/how-to-build-your-very-own-keyboard-firmware-t7177.html
 * https://www.reddit.com/r/MechanicalKeyboards/wiki/firmware
 * https://docs.qmk.fm/
-
 * http://www.pjrc.com/teensy/usb_keyboard.html
 * http://www.dribin.org/dave/keyboard/
 * http://blog.komar.be/how-to-make-a-keyboard-the-matrix/
 * http://webpages.charter.net/coinopcauldron/swarticle.html
-
 * https://github.com/Tranquilite0/Teensy-Keyboard
 * https://github.com/BathroomEpiphanies/AVR-Keyboard
 * https://github.com/kiibohd/controller
 * https://github.com/frobiac/adnw
 * https://github.com/humblehacker/firmware
+* https://github.com/ruiqimao/keyboard-pcb-guide
+* https://keebfol.io/tutorials
+* https://keebfol.io/tools
 
 
 Plates
