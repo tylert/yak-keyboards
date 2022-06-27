@@ -6,6 +6,10 @@ YAK = "Yet Another Keyboard"
 Resources
 =========
 
+* https://github.com/mountainmannm/Bolt-Industries
+* https://blog.adafruit.com/2021/02/19/raspberry-pi-pico-kmk-macro-keypad-piday-raspberrypi-raspberry_pi/
+* https://github.com/kbjunky/MacroPact
+* https://www.40percent.club/2021/02/pipi-gherkin.html
 * http://www.keyboard-layout-editor.com/
 * https://github.com/ijprest/keyboard-layout-editor
 * http://builder.swillkb.com/
@@ -116,6 +120,7 @@ Stabilizer Bars
 Ready-made (for 6.25 unit spacebars and Cherry stabilizers; PCB-only?):
 
 * http://www.gonskeyboardworks.com/stabilizers/90-wire-for-spacebar-stabilizers.html
+
 
 DIY Costar
 ^^^^^^^^^^
