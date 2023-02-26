@@ -39,6 +39,7 @@ Resources
 * https://github.com/ruiqimao/keyboard-pcb-guide
 * https://keebfol.io/tutorials
 * https://keebfol.io/tools
+* https://github.com/riskable/keycap_playground
 
 
 Plates
