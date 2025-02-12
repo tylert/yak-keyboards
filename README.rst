@@ -6,31 +6,31 @@ YAK = "Yet Another Keyboard"
 Resources
 =========
 
-* https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/
-* http://kmkfw.io/docs/
+* https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard
+* http://kmkfw.io/docs
 * https://github.com/mountainmannm/Bolt-Industries
-* https://blog.adafruit.com/2021/02/19/raspberry-pi-pico-kmk-macro-keypad-piday-raspberrypi-raspberry_pi/
+* https://blog.adafruit.com/2021/02/19/raspberry-pi-pico-kmk-macro-keypad-piday-raspberrypi-raspberry_pi
 * https://github.com/kbjunky/MacroPact
 * https://www.40percent.club/2021/02/pipi-gherkin.html
-* http://www.keyboard-layout-editor.com/
+* http://www.keyboard-layout-editor.com
 * https://github.com/ijprest/keyboard-layout-editor
-* http://builder.swillkb.com/
+* http://builder.swillkb.com
 * https://github.com/swill/kb_builder
-* https://kbfirmware.com/
+* https://kbfirmware.com
 * https://github.com/ruiqimao/qmkbuilder
-* http://kalerator.clueboard.co/
+* http://kalerator.clueboard.co
 * https://github.com/skullydazed/kalerator
 * https://github.com/tmk/tmk_keyboard
 * https://geekhack.org
 * https://deskthority.net
-* https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/
-* http://blog.roastpotatoes.co/2015/03/30/introduction-to-the-tmk-firmware/
+* https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard
+* http://blog.roastpotatoes.co/2015/03/30/introduction-to-the-tmk-firmware
 * https://deskthority.net/workshop-f7/how-to-build-your-very-own-keyboard-firmware-t7177.html
 * https://www.reddit.com/r/MechanicalKeyboards/wiki/firmware
-* https://docs.qmk.fm/
+* https://docs.qmk.fm
 * http://www.pjrc.com/teensy/usb_keyboard.html
-* http://www.dribin.org/dave/keyboard/
-* http://blog.komar.be/how-to-make-a-keyboard-the-matrix/
+* http://www.dribin.org/dave/keyboard
+* http://blog.komar.be/how-to-make-a-keyboard-the-matrix
 * http://webpages.charter.net/coinopcauldron/swarticle.html
 * https://github.com/Tranquilite0/Teensy-Keyboard
 * https://github.com/BathroomEpiphanies/AVR-Keyboard
@@ -41,7 +41,8 @@ Resources
 * https://keebfol.io/tutorials
 * https://keebfol.io/tools
 * https://github.com/riskable/keycap_playground
-* https://flatfootfox.com/ergogen-introduction/  KiCAD PCB and case generator for "any" keyboard?
+* https://flatfootfox.com/ergogen-introduction  KiCAD PCB and case generator for "any" keyboard?
+* https://incoherency.co.uk/blog/stories/jesboard.html  3D printed
 
 
 Plates
@@ -53,7 +54,7 @@ Plates
 
 .. image:: plate_spacebar_holes.png
 
-From http://cherrycorp.com/product/mx-series/
+From http://cherrycorp.com/product/mx-series
 
 
 Parts
@@ -103,7 +104,7 @@ PCB mount Cherry (Part number G99-0742 with 2.0 unit bars):
 
 * http://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+g99
 * http://www.gonskeyboardworks.com/10-stabilizers
-* http://winkeyless.kr/product/cherry-pcb-mount-stabilizers/
+* http://winkeyless.kr/product/cherry-pcb-mount-stabilizers
 * http://www.digikey.ca/product-search/en?keywords=cherry%20g99
 
 Plate mount Cherry (Part number G99-0224 with 2.0 unit bars):
@@ -138,7 +139,7 @@ DIY Costar
     between 16 and 17 gauge (AWG)
 
 * https://youtu.be/zry3CHNKgT8
-* http://hobbyhome.ca/product/music-wire-36-047-20/
+* http://hobbyhome.ca/product/music-wire-36-047-20
 
 "Du-Bro E/Z Bender" (DUB480 or DUB481 kits + DUB484 die)
 
@@ -152,13 +153,13 @@ DUB486  0.072 to 0.093 inch
 
 * http://shop.dubro.com/p/e-z-bender-wire-forming-tool
 * http://shop.dubro.com/p/e-z-bender-wire-forming-tool-2
-* http://hobbyhome.ca/product/ez-bender-wire-forming-tool-sm/
+* http://hobbyhome.ca/product/ez-bender-wire-forming-tool-sm
 
 
 DIY Cherry
 ^^^^^^^^^^
 
-* http://hobbyhome.ca/product/music-wire-36-062116-15/
+* http://hobbyhome.ca/product/music-wire-36-062116-15
 
 Do not try to bend this wire on the DUB480 or DUB481 kits using the DUB485 die.
 
