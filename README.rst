@@ -26,7 +26,7 @@ Resources
 * https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard
 * http://blog.roastpotatoes.co/2015/03/30/introduction-to-the-tmk-firmware
 * https://deskthority.net/workshop-f7/how-to-build-your-very-own-keyboard-firmware-t7177.html
-* https://www.reddit.com/r/MechanicalKeyboards/wiki/firmware
+* https://reddit.com/r/MechanicalKeyboards/wiki/firmware
 * https://docs.qmk.fm
 * http://www.pjrc.com/teensy/usb_keyboard.html
 * http://www.dribin.org/dave/keyboard
@@ -68,7 +68,7 @@ Cherry MX
 
 Blue, Clear and Black switches:
 
-* http://www.digikey.ca/product-search/en/switches/pushbutton-switches/1114209?k=cherry%20mx
+* http://digikey.ca/product-search/en/switches/pushbutton-switches/1114209?k=cherry%20mx
 
 Blue, Clear, Black and Grey linear switches:
 
@@ -95,6 +95,8 @@ DCS PBT:
 DCS Extra keys (ABS and PBT depending on stock/colours):
 
 * http://keyshop.pimpmykeyboard.com/products/blank-key-packs/dcs-relegendables
+* https://github.com/riskable/keycap_playground  OpenSCAD keycap designs
+* https://github.com/rsheldiii/KeyV2  OpenSCAD keycap designs
 
 
 Stabilizers
@@ -105,12 +107,12 @@ PCB mount Cherry (Part number G99-0742 with 2.0 unit bars):
 * http://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+g99
 * http://www.gonskeyboardworks.com/10-stabilizers
 * http://winkeyless.kr/product/cherry-pcb-mount-stabilizers
-* http://www.digikey.ca/product-search/en?keywords=cherry%20g99
+* http://digikey.ca/product-search/en?keywords=cherry%20g99
 
 Plate mount Cherry (Part number G99-0224 with 2.0 unit bars):
 
 * http://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+g99
-* http://www.digikey.ca/product-search/en?keywords=cherry%20g99
+* http://digikey.ca/product-search/en?keywords=cherry%20g99
 
 Plate mount Costar:
 
