@@ -6,8 +6,8 @@ YAK = "Yet Another Keyboard"
 Resources
 =========
 
+* https://vikasraj.dev/blog/qmk-pi-pico-rp2040
 * https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard
-* http://kmkfw.io/docs
 * https://github.com/mountainmannm/Bolt-Industries
 * https://blog.adafruit.com/2021/02/19/raspberry-pi-pico-kmk-macro-keypad-piday-raspberrypi-raspberry_pi
 * https://github.com/kbjunky/MacroPact
