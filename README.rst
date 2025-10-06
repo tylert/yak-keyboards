@@ -9,6 +9,7 @@ Resources
 * https://vikasraj.dev/blog/qmk-pi-pico-rp2040
 * https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard
 * https://github.com/mountainmannm/Bolt-Industries
+* https://github.com/lsartory/Clavier  KiCAD PCB, etc.
 * https://blog.adafruit.com/2021/02/19/raspberry-pi-pico-kmk-macro-keypad-piday-raspberrypi-raspberry_pi
 * https://github.com/kbjunky/MacroPact
 * https://www.40percent.club/2021/02/pipi-gherkin.html
