@@ -12,7 +12,7 @@ YAK = Yet Another Keyboard
 * <https://blog.adafruit.com/2021/02/19/raspberry-pi-pico-kmk-macro-keypad-piday-raspberrypi-raspberry_pi>
 * <https://github.com/kbjunky/MacroPact>
 * <https://www.40percent.club/2021/02/pipi-gherkin.html>
-* <http://www.keyboard-layout-editor.com>
+* <https://keyboard-layout-editor.com>
 * <https://github.com/ijprest/keyboard-layout-editor>
 * <http://builder.swillkb.com>
 * <https://github.com/swill/kb_builder>
@@ -24,7 +24,7 @@ YAK = Yet Another Keyboard
 * <https://geekhack.org>
 * <https://deskthority.net>
 * <https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard>
-* <http://blog.roastpotatoes.co/2015/03/30/introduction-to-the-tmk-firmware>
+* <https://blog.roastpotatoes.co/2015/03/30/introduction-to-the-tmk-firmware>
 * <https://deskthority.net/workshop-f7/how-to-build-your-very-own-keyboard-firmware-t7177.html>
 * <https://reddit.com/r/MechanicalKeyboards/wiki/firmware>
 * <https://docs.qmk.fm>
@@ -41,8 +41,9 @@ YAK = Yet Another Keyboard
 * <https://keebfol.io/tutorials>
 * <https://keebfol.io/tools>
 * <https://github.com/riskable/keycap_playground>
-* <https://flatfootfox.com/ergogen-introduction> KiCAD PCB and case generator for \"any\" keyboard?
+* <https://flatfootfox.com/ergogen-introduction> KiCAD PCB and case generator for 'any' keyboard?
 * <https://incoherency.co.uk/blog/stories/jesboard.html> 3D printed
+* <https://github.com/cyril-L/keybi_firmware> keyboard with trackball and smart card reader?
 
 
 # Plates
@@ -98,15 +99,15 @@ DCS Extra keys (ABS and PBT depending on stock/colours):
 
 PCB mount Cherry (Part number G99-0742 with 2.0 unit bars):
 
-* <http://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+g99>
+* <https://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+g99>
 * <http://gonskeyboardworks.com/10-stabilizers>
 * <http://winkeyless.kr/product/cherry-pcb-mount-stabilizers>
-* <http://digikey.ca/product-search/en?keywords=cherry%20g99>
+* <https://digikey.ca/product-search/en?keywords=cherry%20g99>
 
 Plate mount Cherry (Part number G99-0224 with 2.0 unit bars):
 
-* <http://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+g99>
-* <http://digikey.ca/product-search/en?keywords=cherry%20g99>
+* <https://ca.mouser.com/Search/Refine.aspx?Keyword=cherry+g99>
+* <https://digikey.ca/product-search/en?keywords=cherry%20g99>
 
 Plate mount Costar:
 
